@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="author" content="Krzystof Emmanuel P. Autencio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Baybayin Translator</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+    </head>
+    <body>
+
+        <div id="main">
+
+            <header class="noPrint">
+                <h1>Tagasalin sa Baybayin</h1>
+
+                <div id="menu_button">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                
+            </header>
+            
+            <article>
+                <hr class="noPrint">
+                <aside class="settings noPrint">
+                    <div>
+                        <label>Text Alignment:</label>
+                        <select>
+                            <option selected>left</option>
+                            <option>center</option>
+                            <option>right</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Word Wrap:</label>
+                        <input type="checkbox" checked>
+                    </div>
+                    <div>
+                        <label>Input Font Size:</label>
+                        <input id="input_font_size" type="range" min="15" max="50" value="15">
+                    </div>
+                    <div>
+                        <label>Output Font Size:</label>
+                        <input id="output_font_size" type="range" min="0.6" max="2" value="0.6" step="0.1">
+                    </div>
+                    <div>
+                        <button>Export</button>
+                    </div>
+                    <hr>
+                </aside>
+
+                <h2 class="noPrint">Modernong Alpabeto</h2>
+                <textarea class="input noPrint" lang="tl" autofocus></textarea>
+                
+                <h2 class="noPrint">Modipikadong Baybayin</h2>
+                <div class="output"><p></p></div>
+            </article>
+            <br class="noPrint">
+            <footer class="noPrint">
+                <hr>
+                <p>&copy; 2019 Krzystof Autencio</p>
+            </footer>
+        
+        </div>
+
+    </body>
+
+    <script src="js/index.js"></script>
+
+</html>
