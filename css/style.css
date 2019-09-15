@@ -110,7 +110,7 @@ h2 {
 
 .show {
     display: block;    
-    max-height: 75vh;
+    max-height: 500px;
 }
 
 .settings > div {
